@@ -9,11 +9,6 @@
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
-.centered-block {
-  margin: auto;
-  text-align: center;
-}
-
 .header {
   position: relative;
   height: 100vh;
@@ -39,11 +34,13 @@
 }
 
 .header__title {
+  position: relative;
   width: 730px;
   padding-left: 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
+  z-index: 2;
 }
 
 .header__subtitle {
@@ -54,6 +51,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 2;
 }
 
 .header__link {
@@ -86,6 +84,7 @@
   position: absolute;
   top: 64px;
   right: 0;
+  z-index: 0;
 }
 
 .description {
@@ -121,6 +120,7 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin-bottom: 30px;
 }
 
 .two-columns__main-text :last-child {
@@ -138,6 +138,8 @@
 }
 
 .section-title {
+  margin: auto;
+  text-align: center;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -146,6 +148,8 @@
 }
 
 .section-subtitle {
+  margin: auto;
+  text-align: center;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -153,6 +157,8 @@
 }
 
 .table {
+  list-style-type: none;
+  padding: 0;
   margin: 0 auto;
   width: 1100px;
   display: flex;
@@ -184,6 +190,7 @@
 }
 
 .feynman {
+  padding-top: 100px;
   position: relative;
   height: 790px;
   background-color: #f2f2f2;
@@ -194,14 +201,17 @@
 }
 
 .feynman__title {
+  margin: auto;
+  text-align: center;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
   width: 648px;
-  padding-top: 100px;
 }
 
 .feynman__subtitle {
+  margin: auto;
+  text-align: center;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -261,23 +271,20 @@
 
 .footer {
   background-color: #1f1f1f;
-}
-
-.footer *{
-  color: white;
-  text-decoration: none;
+  min-height: 350px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 60px 0 40px;
 }
 
 .footer__columns {
-  min-height: 250px;
   margin: 0 auto;
-  padding: 60px 0 40px;
   width: 90%;
   display: flex;
   justify-content: space-between;
 }
 
-.footer__columns_content_copyright {
+.footer__column_content_copyright {
   display: flex;
   flex-basis: 711px;
   flex-direction: column;
@@ -295,6 +302,7 @@
 }
 
 .footer__author {
+  color: white;
   margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
@@ -302,6 +310,7 @@
 }
 
 .footer__column-heading {
+  color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -309,15 +318,21 @@
   margin-bottom: 20px;
 }
 
-.footer__column-links{
-  display: block;
+.footer__column-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__column-link {
+  color: white;
+  text-decoration: none;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   margin: 0;
 }
 
-.footer__social-icon{
+.footer__social-icon {
   margin-right: 10px;
   width: 16px;
   height: 16px;
