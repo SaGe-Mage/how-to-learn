@@ -1,0 +1,7 @@
+.resources__links-logo {
+  transition: opacity .5s ease;
+}
+
+.resources__links-logo:hover {
+  opacity: 50%;
+}
