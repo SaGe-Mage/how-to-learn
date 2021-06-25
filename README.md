@@ -10,3 +10,5 @@
 ## Используемые технологии
 - HTML
 - CSS
+
+https://sage-mage.github.io/how-to-learn/
